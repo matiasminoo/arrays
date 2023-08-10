@@ -1,4 +1,4 @@
-# arrays
+# Practica arrays
 
 Practicas en C
 
