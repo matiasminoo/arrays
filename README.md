@@ -19,3 +19,4 @@ Practicas en C
 - [Ejercicio 16](./ej16.c)
 - [Ejercicio 17](./ej17.c)
 - [Ejercicio 18](./ej18.c)
+- [Ejercicio 26](./ej26.c)
