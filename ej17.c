@@ -2,19 +2,27 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-void to_lower_case(const char *palabra)
+void to_lower_case(char *word)
 {
-    if (isalpha(palabra))
+    for (int i = 0; word[i]; i++)
     {
-        char letra = tolower(*palabra);
+        if (isalpha(word[i]))
+        {
+            word[i] = tolower(word[i]);
+        }
     }
 }
-
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-    const char *palabra = argv[1];
-    to_lower_case(palabra);
+
+    if (argc != 2)
+    {
+        printf("Uso: %s <word>\n", argv[0]);
+        return 1;
+    }
+
+    to_lower_case(argv[1]);
     printf("La palabra antes: %s\n", argv[1]);
-    printf("La palabra ahora: %s\n", palabra);
+    printf("La palabra ahora: %s\n", argv[1]);
     return 0;
 }
